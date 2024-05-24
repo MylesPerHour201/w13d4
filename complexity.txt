@@ -1,0 +1,10 @@
+Bubble Sort has the worst overall performance due to its nested loops that compare all elements in every pass, even if the list is nearly sorted.
+Selection Sort and Insertion Sort have similar average and worst-case complexities (O(n^2)), but they can perform better in the best case (O(n)) when the list is already sorted (Selection Sort) or partially sorted (Insertion Sort).
+Selection Sort has slightly fewer swaps compared to Bubble Sort but requires the same number of comparisons in most cases.
+Insertion Sort performs fewer comparisons than both Bubble Sort and Selection Sort in the average case.
+The number of swaps for Insertion Sort is usually close to the number of comparisons.
+Preferred Scenarios:
+
+For small datasets: Any of these algorithms might be suitable due to the relatively small execution time. However, Insertion Sort might be a better choice due to its potentially lower number of comparisons.
+For nearly sorted datasets: Selection Sort might be a good choice because it can take advantage of the partial order and potentially achieve O(n) complexity.
+For larger datasets or when frequent sorting is needed: Consider more efficient sorting algorithms like Merge Sort (O(n log n)) or Quick Sort (average O(n log n), worst case O(n^2)) for better performance.
